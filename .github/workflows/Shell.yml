@@ -3,12 +3,12 @@ on : push
 
 jobs:
   run-shell-command:
-  runs-on: ubuntu-latest
-  steps :
-  - name : String
-    run : echo "Hello World"
-  - name : Multiline
-    run : |
-      node -v
-      npm -v 
+   runs-on: ubuntu-latest
+   steps :
+   - name : String
+     run : echo "Hello World"
+   -  name : Multiline
+      run : |
+       node -v
+       npm -v 
   
