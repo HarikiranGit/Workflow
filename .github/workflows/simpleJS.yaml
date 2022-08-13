@@ -1,0 +1,20 @@
+name: shell command
+on : push
+
+jobs:
+  run-shell-command:
+   runs-on: ubuntu-latest
+   steps :
+   - name : String
+     run : echo "Hello World"
+   -  name : Multiline
+      run : |
+       node -v
+       npm -v 
+   -  name: Simple JS action
+      id : greet
+      uses: actions/hello-world-java-script-action@v1
+      with:
+       who-to-greet: John
+    - name: log greet time
+      run: echo "${{steps.greet.outputs.time}}"
