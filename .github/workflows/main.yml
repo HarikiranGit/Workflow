@@ -10,7 +10,7 @@ on:
     
 jobs:
  run-github-actions:
-  runs-on: ubuntu_latest
+  runs-on: ubuntu-latest
   steps:
   - name : list files
     run: |
