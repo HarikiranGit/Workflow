@@ -1,0 +1,19 @@
+name: Action
+
+on:
+   schedule:
+   - cron: "0/5 * * * *"
+   - cron: "0/6 * * * *"
+   
+   pull_request:
+    types: [closed,assigned,opened,reopened]
+    
+jobs:
+ run-github-actions:
+  runs-on: ubuntu_latest
+  steps:
+  - name : list files
+    run: |
+      pwd
+      ls -a 
+   
