@@ -13,7 +13,7 @@ jobs:
        npm -v 
    -  name: Simple JS action
       id : greet
-      uses: actions/hello-world-java-script-action@v1
+      uses: HarikiranGit/repo-1@44f161132310341e3a43243e779aa41f3104a3d4
       with:
        who-to-greet: John
    - name: log greet time
